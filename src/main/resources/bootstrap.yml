@@ -1,0 +1,15 @@
+server:
+  port: 9004
+spring:
+  application:
+    name: FriendFamilyMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML
